@@ -5,11 +5,12 @@ import Hero from '../Hero';
 import Portfolio2 from '../Portfolio/Portfolio2';
 import Portfolio3 from '../Portfolio/Portfolio3';
 import Div from '../Div';
+// import Banner from './Banner';
 import SectionHeading from '../SectionHeading';
 import Spacing from '../Spacing';
 import FunFact2 from '../FunFact/FunFact2';
 import MovingText2 from '../MovingText/MovingText2';
-
+// import { FaWhatsapp } from "react-icons/fa";
 import Cta from '../Cta';
 import LogoList from '../LogoList';
 import MovingText from '../MovingText';
@@ -20,7 +21,9 @@ import TeamSlider from '../Slider/TeamSlider';
 import VideoModal from '../VideoModal';
 import TimelineSlider from '../Slider/TimelineSlider';
 import { pageTitle } from '../../helper';
-import ShowcasePortfolioHome from './ShowcasePortfolioHome';
+// import ShowcasePortfolioHome from './ShowcasePortfolioHome';
+// import Hero7 from '../Hero7';
+import CaseStudyShowcaseHome from './CaseStudyShowcaseHome';
 
 export default function Home() {
   pageTitle('Home');
@@ -57,16 +60,16 @@ export default function Home() {
   ]
   const serviceData1 = [
     {
-      title: 'UI/UX Design',
-      href: '/service/service-details',
+      title: 'Our',
+      // href: '/service/service-details',
     },
     {
-      title: 'Marketing',
-      href: '/service/service-details',
+      title: 'Event',
+      // href: '/service/service-details',
     },
     {
-      title: 'Branding',
-      href: '/service/service-details',
+      title: 'Partners',
+      // href: '/service/service-details',
     },
   ];
   // FunFact Data
@@ -97,66 +100,100 @@ export default function Home() {
   const portfolioData = [
     {
       title: 'Wealth Management Services',
-      subtitle: "With Rits Capital's Wealth Management Services, we guide you on your financial dreams from our experts. We boost your investment journey with our Portfolio Management Services (PMS) that meets your goals. Our Wealth Planning services are a roadmap for your financial success. With our team, you secure your future Insurance solutions and learn to manage your money wisely for flexibility. Explore new opportunities with our adaptable Lending Services. At Rits Capital, you attain wealth solutions and ensure your financial landscape is set for growth. W Your financial success pathway begins here.",
+      subtitle:"",
+      subPoints: [" Personalized wealth management services for individual needs.",
+      " Maximize returns while minimizing risks through strategic planning.",
+      " Rigorous analysis tailored to your financial objectives."
+    ],
       btnText: 'See Details',
       btnLink: '/Wealthmanagement',
-      imageUrl: '/images/h3.jpg',
+      imageUrl: '/images/animated/Wealth.png',
       category: 'Web Development',
     },
     {
       title: 'Investment Banking',
-      subtitle: "Unlock the power of financial success with Rits Capital's Investment Banking expertise. From guiding Initial Public Offerings (IPOs) to managing Mergers and acquisitions (M&A), our seasoned team ensures strategic growth. Get access to funding with Private Equity solutions tailored to your vision. Our Valuation services provide clarity in the complex financial landscape. Seamlessly navigate Equity Capital Markets (ECM) with our advisory and secure your financial future with Debt Advisory services. Rits Capital's Investment Banking is your gateway to precision, strategy, and sustainable financial triumphs – because every financial move is a step towards your success. ",
+      subtitle: "",
+      subPoints: [" Strategic growth through IPOs and M&As guidance.",
+      "Access tailored Private Equity solutions for funding including Equity and Debts Capital Markets.",
+      " Navigate with precision and sustainability to enable successful financial decisions"
+    ],
+  
       btnText: 'See Details',
       btnLink: '/Investment',
-      imageUrl: '/images/h4.jpg',
+      imageUrl: '/images/animated/invest.png',
       category: 'Branding',
     },
     {
-      title: 'Accounting ',
-      subtitle: "Experience financial precision with Rits Capital's comprehensive accounting services. Our experts bring accuracy and transparency to your financial records, ensuring compliance with Tax regulations. Dive into our Advisory Services for strategic financial guidance tailored to your goals. With Audit Support Services, trust in a meticulous review of your financial processes. Rits Capital is your trusted partner for holistic accounting solutions, crafting a financial landscape where accuracy, compliance, and strategic vision converge for sustained success. ",
+      title: (
+        <>
+          Financial <span style={{ color: '' }}>Support</span> Services
+        </>
+      ),
+      subtitle: "",
+      subPoints: [" Precision accounting: Ensure compliance with tax regulations.",
+      "  Tailored advisory: Strategic financial guidance for your goals.",
+      "  Meticulous audit support and holistic accounting solutions for accurate financial processes."
+    ],
+    
       btnText: 'See Details',
       btnLink: '/Accounting',
-      imageUrl: '/images/h5.jpg',
+      imageUrl: '/images/animated/Financial.png',
       category: 'UI Design',
     },
     {
-      title: 'Acceleration ',
-      subtitle: "Fuel your business growth with Rits Capital's Acceleration services. Experience personalized mentorship and handholding that propels your venture to new heights. Navigate strategic roll-ups with our expert guidance, optimizing synergies for unparalleled success. Unlock a dynamic office space that fosters innovation and collaboration. At Rits Capital, we go beyond funding – we provide comprehensive Funding Support, ensuring your business has the financial backing it needs to thrive. Propel your journey with Rits Capital's Acceleration services, where mentorship, strategy, infrastructure, and funding converge for a transformative business trajectory. ",
+      title: 'Startup Incubation ',
+      subtitle: "",
+    
+      subPoints: ["Accelerate growth with personalized mentorship and strategic roll-ups.",
+      "  Access dynamic office space fostering innovation and collaboration.",
+      " Comprehensive funding support for thriving businesses for unparalleled success."
+    ],
       btnText: 'See Details',
       btnLink: '/Acceleration',
-      imageUrl: '/images/h6.jpg',
+      imageUrl: '/images/animated/startup.png',
       category: 'Apps Design',
     },
-    {
-      title: 'Pre-IPO ',
-      subtitle: "Embark on your Pre-IPO journey with Rits Capital, where unique opportunities await. Explore exclusive deals in unlisted shares, strategically curated to align with your investment goals. Dive into a diverse portfolio with baskets of unlisted shares, offering a tailored approach to wealth creation. Rits Capital's Pre-IPO expertise ensures that you stay ahead in the ever-evolving financial landscape, securing your position for success. Join us as we navigate the uncharted territories of unlisted shares, bringing you unparalleled opportunities and strategic investment avenues. Elevate your investment experience with Rits Capital's Pre-IPO offers. ",
-      btnText: 'See Details',
-      btnLink: '/Preipo',
-      imageUrl: '/images/h7.jpg',
-      category: 'Apps Design',
-    },
+    // {
+    //   title: 'Pre-IPO ',
+    //   subtitle: "",
+   
+    //   subPoints: [" Discover exclusive unlisted share deals aligned with your  investment goals.",
+    //   " Diversify with tailored baskets of shares for wealth creation.",
+    //   " Explore unparalleled Pre-IPO opportunities and strategic investment avenues."
+    // ],
+    //   btnText: 'See Details',
+    //   btnLink: '/Preipo',
+    //   imageUrl: '/images/animated/preipo.png',
+    //   category: 'Apps Design',
+    // },
 
   ];
 
   return (
     <>
       {/* Start Hero Section */}
-      <ShowcasePortfolioHome/>
+      {/* <Hero7/> */}
+      <CaseStudyShowcaseHome 
+      />
+
+      {/* <ShowcasePortfolioHome/> */}
+      {/* <Banner/> */}
       {/* <Hero
         title="Rits Capital"
         subtitle="At Rits Capital, we understand that wealth management is more than just numbers. It's about your goals, your dreams, and your legacy. We partner with you to create a personalized plan that grows your wealth, protects your assets, and helps you achieve your financial aspirations."
         btnText="Get a Quote"
         btnLink="/contact"
         scrollDownId="#service"
-        // socialLinksHeading="Follow Us"
-        // heroSocialLinks={heroSocialLinks}
+        socialLinksHeading="Follow Us"
+        heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/h1.jpg"
         
       /> */}
      
+     <Div  className="glow d-none d-md-block" ><img id='i1' src="/images/Glow.svg" alt="" /></Div>
       
       {/* End Hero Section */}
-
+  {/* <Spacing lg="50" md="80" /> */}
       {/* Start FunFact Section */}
       <div className="container">
         <FunFact/>
@@ -193,27 +230,45 @@ export default function Home() {
         </Div>
       </Div> */}
       {/* what we do */}
-      <Spacing lg="90" md="45" />
+      
+   
+
+      <Div className="glow d-none d-md-block"><img id='i4' src="/images/Glow1.svg" alt="" /></Div>
+      <Spacing lg="50" md="45" />
+      <Div className="container">
+        <SectionHeading
+          title="What We Do"
+          subtitle=""
+          variant="cs-style1 text-center red-text"
+          
+        />
+        <Spacing lg="50" md="45" />
+      </Div>
       {portfolioData.map((item, index) =>
         index % 2 === 0 ? (
           <Div key={index}>
              <Portfolio3
               title={item.title}
               subtitle={item.subtitle}
+              subPoints={item.subPoints}
               btnText={item.btnText}
               btnLink={item.btnLink}
               imageUrl={item.imageUrl}
             
               // category={item.category}
             />
+
            
             <Spacing lg="50" md="50" />
+      {/* <Div className="glow"><img id='i4' src="/images/Glow1.svg" alt="" /></Div> */}
+
           </Div>
         ) : (
           <Div key={index}>
             <Portfolio2
               title={item.title}
               subtitle={item.subtitle}
+              subPoints={item.subPoints}
               btnText={item.btnText}
               btnLink={item.btnLink}
               imageUrl={item.imageUrl}
@@ -362,7 +417,9 @@ export default function Home() {
       {/* Start Testimonial Section */}
       {/* <TestimonialSlider /> */}
       {/* End Testimonial Section */}
-      {/* <Spacing lg="150" md="80" /> */}
+      {/* <Div className="glow"><img id='i2' src="/images/Glow.svg" alt="" /></Div> */}
+      <Spacing lg="50" md="80" />
+     
       <Div className="container">
         <FunFact2
           // data={funfaceData2}
@@ -371,7 +428,7 @@ export default function Home() {
         />
       </Div>
       {/* Start Blog Section */}
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" />
       <Div className="cs-shape_wrap_4">
         <Div className="cs-shape_4"></Div>
         <Div className="cs-shape_4"></Div>
@@ -393,33 +450,51 @@ export default function Home() {
             </Div>
           </Div>
         </Div>
-      </Div>
+      </Div> */}
       {/* End Blog Section */}
 
       {/* Start MovingText Section */}
-      <Spacing lg="125" md="70" />
-      {/* <MovingText text="Our reputed world wide partners" /> */}
-      
+      {/* <Spacing lg="125" md="70" />
+      <MovingText text="Our reputed world wide partners" />
+       */} 
+       {/* <Spacing lg="50" md="80" />  */}
+       <Spacing lg="50" md="45" />
+      <Div className="container">
+        <SectionHeading
+          title="Our Event Patners"
+          subtitle=""
+          variant="cs-style1 text-center red-text"
+          
+        />
+        <Spacing lg="50" md="45" />
+      </Div>
+       {/* <Div><h3>our Event part</h3></Div> */}
       <MovingText2 data={serviceData1} />
-      <Spacing lg="105" md="70" />
+      <Spacing lg="50" md="80" /> 
+      {/* <Spacing lg="105" md="70" /> */}
       {/* End MovingText Section */}
+      {/* <Spacing lg="150" md="80" /> */}
 
       {/* Start LogoList Section */}
-      <Div className="container">
+      {/* <Div className="container">
         <LogoList />
       </Div>
-      <Spacing lg="150" md="80" />
+      <Spacing lg="150" md="80" /> */}
       {/* End LogoList Section */}
 
       {/* Start CTA Section */}
+      <Div className="glow d-none d-md-block"><img id='i3' src="/images/Glow.svg" alt="" /></Div>
+
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
+          title="Let's discuss and take the journey <br/>to  <i>growth</i> together"cta
+          btnText="Setup Free Meeting"
           btnLink="/contact"
-          // bgSrc="/images/contactbg.avif"
+          bgSrc="/images/cta_bg.jpeg"
         />
       </Div>
+      <Spacing lg="50" md="80" />
+   
       {/* End CTA Section */}
     </>
   );

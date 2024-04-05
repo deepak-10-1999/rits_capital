@@ -45,7 +45,7 @@ export default function FullScreenHorizontalSlider({ data, btnText,
                                     // }}
                                     loop={true}
                                     autoplay={{
-                                        delay: 2000,
+                                        delay: 5000,
                                         disableOnInteraction: false,
                                       }}
                                   
@@ -79,23 +79,23 @@ export default function FullScreenHorizontalSlider({ data, btnText,
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <Div
-              className="cs-hero cs-style4 cs-bg"
-              // style={{ backgroundImage: `url(${item.imgUrl})` }}
-            >
-              <Link to={item.href} className="cs-hero_link" />
-              <Div className="container cs-hero cs-style1">
+              className="cs-hero cs-style4 text-center cs-bg"
+              style={{ backgroundImage: `url(${item.imgUrl})` }}
+            > 
+              <div className="bg"><Link to={item.href} className="cs-hero_link" />
+              <Div className="container cs-hero justify-content-center">
               <Div className="cs-hero_text">
-                <h2 className="cs-hero_title text-start ">{parse(item.title)}</h2>
-                <Div className="cs-hero_info ">
-            <Div>
-              {/* <Button btnLink={btnLink} btnText={btnText} /> */}
-            </Div>
+                <h2 className="cs-hero_title">{parse(item.title)}</h2>
+                <Div className="cs-hero_info text-white justify-content-space-evenly mt-5">
+          
             <Div>
               <Div className="cs-hero_subtitle">{item.subtitle}</Div>
             </Div>
+            
           </Div>
               </Div>
-            </Div>
+            </Div></div>
+              
             </Div>
           </SwiperSlide>
         ))}

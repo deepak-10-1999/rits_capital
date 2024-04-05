@@ -35,11 +35,11 @@ export default function AboutPage() {
   return (
     <>
       {/* Start Page Heading Section */}
-      <PageHeading
+      {/* <PageHeading
         title="About Us"
-        bgSrc="images/about_hero_bg.jpeg"
+        bgSrc="images/about_hero_bg.png"
         pageLinkText="About Us"
-      />
+      /> */}
       {/* End Page Heading Section */}
 
       {/* Start About Section */}
@@ -48,16 +48,12 @@ export default function AboutPage() {
         <Div className="row">
           <Div className="col-xl-5 col-lg-7">
             <SectionHeading
-              title="Your trusted partner for business"
-              subtitle="About Our Agency"
+              title="About Rits Capital"
+              subtitle=""
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+              At Rits Capital, we understand that wealth management is more than just numbers. It's about your goals, your dreams, and your legacy. We partner with you to create a personalized plan that grows your wealth, protects your assets, and helps you achieve your financial aspirations.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
@@ -66,28 +62,28 @@ export default function AboutPage() {
           </Div>
           <Div className="col-lg-5 offset-xl-2">
             <img
-              src="/images/about_img_1.jpeg"
+              src="/images/animated/about.png"
               alt="About"
               className="w-100 cs-radius_15"
             />
             <Spacing lg="25" md="25" />
           </Div>
-          <Div className="col-lg-7">
+          {/* <Div className="col-lg-6">
             <img
-              src="/images/about_img_2.jpeg"
+              src="/images/h18.jpg"
               alt="About"
               className="w-100 cs-radius_15"
             />
             <Spacing lg="25" md="25" />
           </Div>
-          <Div className="col-lg-5">
+          <Div className="col-lg-6">
             <img
-              src="/images/about_img_3.jpeg"
+              src="/images/h17.jpg"
               alt="About"
               className="w-100 cs-radius_15"
             />
             <Spacing lg="25" md="25" />
-          </Div>
+          </Div> */}
         </Div>
       </Div>
       <Spacing lg="75" md="55" />
@@ -104,14 +100,15 @@ export default function AboutPage() {
       {/* End Fun Fact Section */}
 
       {/* Start Why Choose Section */}
-      <Spacing lg="50" md="80" />
+      <Spacing lg="75" md="55" />
+      {/* <Spacing lg="50" md="80" /> */}
       <Div className="container">
         <Div className="row">
           <Div className="col-xl-6 col-lg-6">
             <Div className="cs-image_layer cs-style1">
               <Div className="cs-image_layer_in">
                 <img
-                  src="/images/h34.jpg"
+                  src="/images/animated/mission1.png"
                   alt="About"
                   className="w-100 cs-radius_15"
                 />
@@ -122,22 +119,15 @@ export default function AboutPage() {
           <Div className="col-xl-6  col-lg-6">
             <SectionHeading
               title="Mission"
-              subtitle="Why Choose Us"
+              subtitle=""
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+              Our Mission is to empower our clients through the delivery of precise, timely, and efficient investment banking services. 
               </p>
               <Spacing lg="15" md="15" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining.
+              By providing strategic financial solutions, we equip our clients with the tools to make informed decisions, fostering the growth and success of their businesses on a global scale.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
@@ -151,36 +141,29 @@ export default function AboutPage() {
       <Div className="container">
         <Div className="row">
           
-          <Div className="col-xl-6  col-lg-6">
+          <Div className="col-xl-6  col-lg-6 order-lg-1 order-2">
             <SectionHeading
               title="Vision"
-              subtitle="Why Choose Us"
+              subtitle=""
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+              Our Vision is to emerge as a premier and highly regarded Investment Banking firm. We are dedicated to delivering expert financial solutions, strategic investment guidance, and unparalleled services tailored for a global clientele.
               </p>
               <Spacing lg="15" md="15" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining.
+              Our aim is to be recognized as the foremost customer-centric firm, providing specialized expertise in investment banking, and ensuring financial success and growth for all our clients on the global stage.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
               <Spacing lg="25" md="0" />
             </SectionHeading>
           </Div>
-          <Div className="col-xl-6 col-lg-6 ">
+          <Div className="col-xl-6 col-lg-6 order-lg-2 order-1 ">
             <Div className="cs-image_layer cs-style1">
               <Div className="cs-image_layer_in">
                 <img
-                  src="/images/h35.jpg"
+                  src="/images/animated/mission2.png"
                   alt="About"
                   className="w-100 cs-radius_15"
                 />
@@ -190,201 +173,36 @@ export default function AboutPage() {
           </Div>
         </Div>
       </Div>
-      <Spacing lg="50" md="80" />
-      <Div className="container">
-        <Div className="row">
-          <Div className="col-xl-6 col-lg-6">
-            <Div className="cs-image_layer cs-style1">
-              <Div className="cs-image_layer_in">
-                <img
-                  src="/images/h36.jpg"
-                  alt="About"
-                  className="w-100 cs-radius_15"
-                />
-              </Div>
-            </Div>
-            <Spacing lg="0" md="40" />
-          </Div>
-          <Div className="col-xl-6  col-lg-6">
-            <SectionHeading
-              title="Values"
-              subtitle="Why Choose Us"
-            >
-              <Spacing lg="30" md="20" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
-              </p>
-              <Spacing lg="15" md="15" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining.
-              </p>
-              <Spacing lg="30" md="30" />
-              <Div className="cs-separator cs-accent_bg"></Div>
-              <Spacing lg="25" md="0" />
-            </SectionHeading>
-          </Div>
-        </Div>
-      </Div>
-      <Spacing lg="50" md="80" />
-      <Div className="container">
-        <Div className="row">
-          
-          <Div className="col-xl-6  col-lg-6">
-            <SectionHeading
-              title="Impact"
-              subtitle="Why Choose Us"
-            >
-              <Spacing lg="30" md="20" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
-              </p>
-              <Spacing lg="15" md="15" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining.
-              </p>
-              <Spacing lg="30" md="30" />
-              <Div className="cs-separator cs-accent_bg"></Div>
-              <Spacing lg="25" md="0" />
-            </SectionHeading>
-          </Div>
-          <Div className="col-xl-6 col-lg-6 ">
-            <Div className="cs-image_layer cs-style1">
-              <Div className="cs-image_layer_in">
-                <img
-                  src="/images/h37.jpg"
-                  alt="About"
-                  className="w-100 cs-radius_15"
-                />
-              </Div>
-            </Div>
-            <Spacing lg="0" md="40" />
-          </Div>
-        </Div>
-      </Div>
-      <Spacing lg="50" md="80" />
-      <Div className="container">
-        <Div className="row">
-          <Div className="col-xl-6 col-lg-6">
-            <Div className="cs-image_layer cs-style1">
-              <Div className="cs-image_layer_in">
-                <img
-                  src="/images/h38.jpg"
-                  alt="About"
-                  className="w-100 cs-radius_15"
-                />
-              </Div>
-            </Div>
-            <Spacing lg="0" md="40" />
-          </Div>
-          <Div className="col-xl-6  col-lg-6">
-            <SectionHeading
-              title="Innovation"
-              subtitle="Why Choose Us"
-            >
-              <Spacing lg="30" md="20" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
-              </p>
-              <Spacing lg="15" md="15" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining.
-              </p>
-              <Spacing lg="30" md="30" />
-              <Div className="cs-separator cs-accent_bg"></Div>
-              <Spacing lg="25" md="0" />
-            </SectionHeading>
-          </Div>
-        </Div>
-      </Div>
-      <Spacing lg="50" md="80" />
-      <Div className="container">
-        <Div className="row">
-          
-          <Div className="col-xl-6  col-lg-6">
-            <SectionHeading
-              title="Excellence"
-              subtitle="Why Choose Us"
-            >
-              <Spacing lg="30" md="20" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
-              </p>
-              <Spacing lg="15" md="15" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining.
-              </p>
-              <Spacing lg="30" md="30" />
-              <Div className="cs-separator cs-accent_bg"></Div>
-              <Spacing lg="25" md="0" />
-            </SectionHeading>
-          </Div>
-          <Div className="col-xl-6 col-lg-6 ">
-            <Div className="cs-image_layer cs-style1">
-              <Div className="cs-image_layer_in">
-                <img
-                  src="/images/h39.jpg"
-                  alt="About"
-                  className="w-100 cs-radius_15"
-                />
-              </Div>
-            </Div>
-            <Spacing lg="0" md="40" />
-          </Div>
-        </Div>
-      </Div>
+      {/* <Spacing lg="100" md="80" /> */}
+     
       {/* End Why Choose Section */}
 
       {/* Start Team Section */}
-      <Spacing lg="145" md="80" />
+      {/* <Spacing lg="145" md="80" /> */}
+      <Spacing lg="75" md="55" />
       <Div className="container">
         <SectionHeading
-          title="Awesome team <br/>members"
-          subtitle="Our Team"
+          title="Our Team"
+          subtitle=""
           variant="cs-style1"
         />
-        <Spacing lg="85" md="45" />
+        <Spacing lg="55" md="45" />
         <TeamSlider />
       </Div>
       {/* End Team Section */}
 
       {/* Start CTA Section */}
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" /> */}
+      <Spacing lg="75" md="55" />
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
+          title="Let's discuss and take the journey <br/>to  <i>growth</i> together"
+          btnText="Setup Free Meeting"
           btnLink="/contact"
-          bgSrc="/images/contactbg.avif"
+          bgSrc="/images/cta_bg_2.jpeg"
         />
       </Div>
+      <Spacing lg="50" md="80" />
       {/* End CTA Section */}
     </>
   );

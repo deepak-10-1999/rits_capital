@@ -1,5 +1,5 @@
 import React from 'react';
-import './customcursor.scss';
+// import './customcursor.scss';
 
 const CustomCursor = () => {
   const cursorSm = React.useRef(null);
@@ -59,8 +59,8 @@ const CustomCursor = () => {
           positionRef.current.destinationY += distanceY;
         }
       }
-      cursorSm.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
-      cursorLg.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
+      // cursorSm.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
+      // cursorLg.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
     };
     followMouse();
   }, []);

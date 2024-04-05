@@ -27,7 +27,7 @@
   color: $accent;
   .cs-moving_text {
     padding: 5px 0;
-    animation: slide-left 40s linear infinite;
+    animation: slide-left 5s linear infinite;
     a {
       &:hover {
         color: transparent;

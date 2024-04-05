@@ -38,14 +38,19 @@ class FunFact2 extends React.Component {
 
     render(){
         return (
-            <section className="funfacts-area ptb-120">
+            <section className="funfacts-area ptb-120" style={{backgroundImage: 'url(./images/animated/Glass.png)'}}>
+                 <div className="cs-shape_3 d-none d-md-block cs-to_up">
+          <img src="/images/Dots1.png" alt="Shape" />
+        </div>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 col-6 col-sm-6">
+                 
+                    <div className="row" >
+                        <div className="fan col-lg-3 col-sm-6">
                             <div className="single-funfact">
-                                <div className="icon">
-                                    <i className="icofont-focus"></i>
-                                </div>
+                                
+                                {/* <div className="icon">
+                                <img src="/images/webicons/workplace.png" alt="" />
+                                </div> */}
                                 <h3 className="odometer">
                                     {/* <span>$</span> */}
                                     <VisibilitySensor
@@ -70,12 +75,14 @@ class FunFact2 extends React.Component {
                                 <p>HNIs, Ultra HNI & Family Offices</p>
                             </div>
                         </div>
+      
                         
-                        <div className="col-lg-3 col-6 col-sm-6">
+                        <div className="fan col-lg-3 col-sm-6">
                             <div className="single-funfact">
-                                <div className="icon">
-                                    <i className="icofont-microphone"></i>
-                                </div>
+                                {/* <div className="icon">
+                                <img src="/images/webicons/data-management.png" alt="" />
+
+                                </div> */}
                                 <h3 className="odometer">
                                     <VisibilitySensor
                                         onChange={this.onVisibilityChange}
@@ -101,11 +108,12 @@ class FunFact2 extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-3 col-6 col-sm-6">
+                        <div className="fan col-lg-3 col-sm-6">
                             <div className="single-funfact">
-                                <div className="icon">
-                                    <i className="icofont-copy"></i>
-                                </div>
+                                {/* <div className="icon">
+                                <img src="/images/webicons/profit.png " alt="" />
+
+                                </div> */}
                                 <h3 className="odometer">
                                   <span>$</span>
                                     <VisibilitySensor
@@ -131,11 +139,11 @@ class FunFact2 extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col-lg-3 col-6 col-sm-6">
+                        <div className="fan col-lg-3 col-sm-6">
                             <div className="single-funfact">
-                                <div className="icon">
-                                    <i className="icofont-users-social"></i>
-                                </div>
+                                {/* <div className="icon">
+                                <img src="/images/webicons/fixed-asset.png" alt="" />
+                                </div> */}
                                 <h3 className="odometer">
                                   <span>$</span>
                                     <VisibilitySensor

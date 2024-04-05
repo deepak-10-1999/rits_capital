@@ -37,7 +37,7 @@
 
 .cs-site_header.cs-style1 {
   &.cs-sticky-active {
-    background-color: $white;
+    background-color: $black;
     box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
   }
 
@@ -51,7 +51,7 @@
     cursor: pointer;
     border: 2px solid currentColor;
     border-radius: 50%;
-    color: $white;
+    // color: #666667;
     .cs-icon_btn_in {
       width: 18px;
       height: 16px;
@@ -145,7 +145,7 @@
 
   .cs-nav .cs-nav_list > li.current-menu-item > a:before {
     bottom: -4px;
-    background-color: $white;
+    background-color: $black;
   }
 }
 .cs-side_header {
@@ -172,7 +172,7 @@
   .cs-side_header_in {
     width: 500px;
     height: 100vh;
-    background-color:$greenwhite;
+    background-color:$gray;
     flex: none;
     margin-left: auto;
     overflow: auto;
@@ -291,7 +291,8 @@
 }
 .cs-sticky_header_active {
   top: 0px;
-  background-color: $greenwhite;
+  // background: linear-gradient(121.23deg, #b3e8c8, rgb(237, 243, 238) 51.9%, #1aeb6a);
+  background-color: $black;
 }
 
 // .cs-gescout_show {
@@ -410,7 +411,7 @@
 
       ul {
         width: 260px;
-        background-color: $greenwhite;
+        background-color: $gray;
         position: absolute;
         box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
         border-top: 2px solid $accent;
@@ -561,7 +562,7 @@
       position: absolute;
       width: 100vw;
       left: -12px;
-      background-color: $greenwhite;
+      background-color: $gray;
       padding: 10px 0;
       display: none;
       top: 100%;
@@ -755,4 +756,10 @@
 }
 
 @media screen and (max-width: 450px) {
+}
+ .cs-main_header_in a{
+  // color: #666667;
+}
+.image{
+  border-radius: 0;
 }

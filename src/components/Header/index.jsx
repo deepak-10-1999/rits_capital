@@ -16,7 +16,7 @@ export default function Header({ variant }) {
       if (window.scrollY > 0) {
         setIsSticky(true);
       } else {
-        setIsSticky(false);
+        setIsSticky(true);
       }
     });
   }, []);
@@ -33,7 +33,7 @@ export default function Header({ variant }) {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" to="/">
-                  <img src="/images/ritslogo2.png" alt="Logo" />
+                  <img className='image' src="/images/ritslogo1.png" alt="Logo" />
                 </Link>
               </Div>
               <Div className="cs-main_header_center">
@@ -43,12 +43,12 @@ export default function Header({ variant }) {
                     style={{ display: `${mobileToggle ? 'block' : 'none'}` }}
                   >
                     <li 
-                    // className="menu-item-has-children"
+                    className="menu-item-has-children"
                     >
                       <NavLink to="/" onClick={() => setMobileToggle(false)}>
                         Home
                       </NavLink>
-                      {/* <DropDown>
+                      <DropDown>
                         <ul>
                           <li>
                             <Link to="/" onClick={() => setMobileToggle(false)}>
@@ -104,7 +104,7 @@ export default function Header({ variant }) {
                             </Link>
                           </li>
                         </ul>
-                      </DropDown> */}
+                      </DropDown>
                     </li>
                     <li>
                       <NavLink
@@ -114,7 +114,9 @@ export default function Header({ variant }) {
                         Who we are
                       </NavLink>
                     </li>
-                    {/* <li className="menu-item-has-children">
+                    {/* <li 
+                    className="menu-item-has-children"
+                    >
                       <NavLink
                         to="service"
                         onClick={() => setMobileToggle(false)}
@@ -164,7 +166,7 @@ export default function Header({ variant }) {
                               to="Wealthmanagement"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Wealth management service
+                              Wealth Management Service
                             </Link>
                           </li>
                           <li>
@@ -172,7 +174,7 @@ export default function Header({ variant }) {
                               to="Investment"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Investment banking
+                              Investment Banking
                             </Link>
                           </li>
                           <li>
@@ -180,7 +182,7 @@ export default function Header({ variant }) {
                               to="Accounting"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Accounting
+                              Financial Support Services
                             </Link>
                           </li>
                           <li>
@@ -188,17 +190,17 @@ export default function Header({ variant }) {
                               to="Acceleration"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Acceleration
+                              Startup Incubation
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link
                               to="Preipo"
                               onClick={() => setMobileToggle(false)}
                             >
-                              Pre ipo
+                              Pre-IPO
                             </Link>
-                          </li>
+                          </li> */}
                           {/* <li>
                             <Link
                               to="portfolio/portfolio-details"
@@ -210,30 +212,14 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                    <li className="menu-item-has-children">
-                      <NavLink to="blog" onClick={() => setMobileToggle(false)}>
-                        Blog
+                   
+                    <li>
+                      <NavLink
+                        to="Whyus"
+                        onClick={() => setMobileToggle(false)}
+                      >
+                        Why us
                       </NavLink>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link
-                              to="blog"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Blog
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="blog/blog-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Blog Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </DropDown>
                     </li>
                     <li
                     //  className="menu-item-has-children"
@@ -285,6 +271,32 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown> */}
+
+                    </li>
+                    <li className="menu-item-has-children">
+                      <NavLink to="blog" onClick={() => setMobileToggle(false)}>
+                        Blog
+                      </NavLink>
+                      <DropDown>
+                        <ul>
+                          <li>
+                            <Link
+                              to="blog"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Blog
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="blog/blog-details"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Blog Details
+                            </Link>
+                          </li>
+                        </ul>
+                      </DropDown>
                     </li>
                   </ul>
                   <span
@@ -333,22 +345,22 @@ export default function Header({ variant }) {
           onClick={() => setSideHeaderToggle(!sideHeaderToggle)}
         />
         <Div className="cs-side_header_in">
-          <Div className="cs-side_header_shape" />
+          {/* <Div className="cs-side_header_shape" /> */}
           <Link className="cs-site_branding" to="/">
-            <img className='w-100 h-100 ' src="images/ritslogo2.png" alt="Logo" />
+            <img className='w-100 h-200 rounded-none ' src="images/ritslogo1.png" alt="Logo" />
           </Link>
-          <Div className="cs-side_header_box">
+          {/* <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
               Do you have a project in your <br /> mind? Keep connect us.
             </h2>
-          </Div>
+          </Div> */}
           <Div className="cs-side_header_box">
             <ContactInfoWidget title="Contact Us" withIcon />
           </Div>
           <Div className="cs-side_header_box">
             <Newsletter
               title="Subscribe"
-              subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
+              subtitle="Rits Capital is an independent investment firm with offices in United States , India, United Kingdom, Singapore, Hong Kong and UAE."
               placeholder="example@gmail.com"
             />
           </Div>

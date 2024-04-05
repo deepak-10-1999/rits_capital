@@ -2,9 +2,16 @@
 .cs-cta.cs-style1 {
   padding: 90px 30px;
   border-radius: 15px;
+  // box-shadow: 2px 0 8px 3px gray;
+  background-color: $gra;
+  
+  // background: linear-gradient(360deg, #fff, #2db460 0%, #082d29);
+  
   .cs-cta_in {
     position: relative;
     z-index: 2;
+    background: transparent;
+
   }
   .cs-cta_title {
     font-weight: 600;

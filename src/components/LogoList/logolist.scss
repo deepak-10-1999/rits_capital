@@ -2,12 +2,25 @@
   display: flex;
   justify-content: space-between;
   margin: 0 -15px;
+
+  @media screen and (max-width: 575px) {
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    align-items: center;
+    margin: 0;
+
+    /* Arrange divs in pairs of two */
+    & > div {
+      width: 48%; /* Set width to less than 50% to allow for spacing */
+      box-sizing: border-box;
+      margin-bottom: 15px; /* Add margin for spacing between pairs of divs */
+    }
+  }
 }
+
 .cs-partner_logo {
   padding: 15px;
-}
-@media screen and (max-width: 575px) {
-  .cs-partner_logo_wrap {
-    margin: 0 -10px;
+
+  @media screen and (max-width: 575px) {
+    margin: 15px 0;
   }
 }

@@ -67,6 +67,15 @@ export default function PhotographyAgencyHome() {
       <Spacing lg="150" md="80" />
       <Div className="container">
         <Div className="row align-items-center cs-column_reverse_lg">
+        <Div className="col-lg-6 offset-lg-1">
+            <SectionHeading
+              title="We are UK based photography <br/>agency"
+              subtitle="About Us"
+              btnText="Learn More"
+              btnLink="/about"
+            />
+            <Spacing lg="0" md="40" />
+          </Div>
           <Div className="col-lg-5">
             <Div className="cs-radius_15 cs-shine_hover_1">
               <img
@@ -76,15 +85,7 @@ export default function PhotographyAgencyHome() {
               />
             </Div>
           </Div>
-          <Div className="col-lg-6 offset-lg-1">
-            <SectionHeading
-              title="We are UK based photography <br/>agency"
-              subtitle="About Us"
-              btnText="Learn More"
-              btnLink="/about"
-            />
-            <Spacing lg="0" md="40" />
-          </Div>
+        
         </Div>
       </Div>
       {/* End About Section */}
@@ -176,6 +177,7 @@ export default function PhotographyAgencyHome() {
 
       {/* Start Blog Section */}
       <Spacing lg="150" md="80" />
+      
       <Div className="cs-shape_wrap_4">
         <Div className="cs-shape_4"></Div>
         <Div className="cs-shape_4"></Div>

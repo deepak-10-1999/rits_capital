@@ -309,8 +309,9 @@ hr {
   align-items: center;
   font-weight: 600;
   color: $white;
-  background:$darkgreen ;
-  padding: 10px 15px;
+  border: 1px solid #02ED85;
+  // background:$darkgreen ;
+  padding: 10px 20px;
   width: -moz-fit-content;
   width: fit-content;
   gap: 8px;
@@ -365,6 +366,7 @@ border-radius: 50px;
       span {
         &::before {
           transform: scaleX(1) rotateY(180deg);
+          
         }
       }
     }
@@ -378,7 +380,9 @@ border-radius: 50px;
     }
   }
 }
-
+.cs-text_btn:hover {
+  box-shadow: 2px 2px 2px #45A9BD;
+}
 .cs-btn.cs-style1 {
   display: inline-flex;
   align-items: center;
@@ -391,7 +395,10 @@ border-radius: 50px;
   line-height: 1.5em;
   font-weight: 600;
   border-radius: 15px;
-  background-color: $accent;
+  // background-color: $accent;
+  background-color: $gray;
+  border-radius: 50px;
+  border: 1px solid #02ED85;
   color: #fff;
   cursor: pointer;
   &:before {
@@ -484,7 +491,7 @@ border-radius: 50px;
   transition: all 0.3s ease;
   border: 2px solid #999696;
   background-color: transparent;
-  color: black;
+  // color: black;
   &:focus {
     border-color: $accent;
   }
@@ -812,7 +819,8 @@ label {
   position: relative;
   z-index: 2;
   .cs-section_subtitle {
-    color: rgb(82, 81, 81);
+    // color: rgb(82, 81, 81);
+    color: $secondary;
     font-size: 17px;
     margin-bottom: 20px;
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -825,7 +833,8 @@ label {
   }
   .cs-separator {
     height: 2px;
-    width: 50px;
+    width: 48%;
+    // margin: 0 10%;
     border-radius: 2px;
   }
 }
@@ -987,6 +996,7 @@ label {
     top: -15%;
   }
 }
+
 .cs-shape_wrap_4 {
   position: relative;
   .cs-shape_4 {
@@ -1008,6 +1018,7 @@ label {
     }
   }
 }
+
 .cs-shape_wrap_5 {
   position: relative;
   .cs-section_heading {
@@ -1076,8 +1087,9 @@ label {
 }
 
 .cs-page_heading.cs-style1 {
-  height: 650px;
+  height:520px;
   padding: 120px 0 50px;
+  margin-top: 80px;
   position: relative;
   &::after {
     content: '';
@@ -1127,6 +1139,7 @@ label {
 
 .cs-image_layer.cs-style1 {
   padding-right: 60px;
+  
   padding-bottom: 60px;
   img {
     position: relative;
@@ -1142,7 +1155,7 @@ label {
       width: 100%;
       right: -60px;
       bottom: -60px;
-      background-color: $greenwhite;
+      background-color: $gra;
       border-radius: inherit;
     }
   }
@@ -1500,6 +1513,7 @@ label {
 @media screen and (max-width: 1199px) {
   .cs-page_heading.cs-style1 {
     height: 450px;
+    margin-top: 80px;
   }
   .cs-half_screen {
     width: 100%;
@@ -1662,4 +1676,78 @@ label {
   .cs-masonry_4_col {
     column-count: 1;
   }
+}
+.highlight{
+	color: #03a495;
+}
+
+
+//wealth managementent service
+
+
+// .show .hide{
+//   height: 150px;
+//   width: 100%;
+//   display: flex;
+//   color:black;
+//   transition: all ease 1s;
+//   justify-content: space-between;
+//   align-items: center;
+//   position: absolute;
+//   bottom: 100px;
+//   opacity: 0;
+//   // padding: 0 10px;
+//   background: linear-gradient(transparent,white);
+// }
+// .show ul{
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 10px;
+
+// }
+// .show:hover .hide{
+//   opacity: 1;
+//   bottom: -120px;
+// }
+@media screen and (max-width: 575px) {
+  .contactt {
+display: flex;
+flex-direction: column;
+  }
+  .show ul{
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 10px;
+  
+  }
+}
+
+.bg1{
+  height: 450px;
+  display: flex;
+  align-items: center;
+  // padding: 80px 115px;
+  
+  width: 100vw;
+  background-color: #0e1323c5;
+z-index: 99;
+// margin-left: 0;
+position: absolute;
+}
+.glow img{
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  z-index:0;
+}
+#i1{
+top: 50%;
+}
+#i3{
+  right: 0%;
+  top: 350vh;
+}
+#i4{
+  right: 0%;
+  top: 200%;
 }

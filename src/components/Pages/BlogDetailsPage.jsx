@@ -19,7 +19,7 @@ export default function BlogDetailsPage() {
     {/* Start Page Heading Section */}
       <PageHeading 
         title='Blog Single'
-        bgSrc='/images/blog_details_hero_bg.jpeg'
+        bgSrc='/images/team_hero_bg.png'
         pageLinkText={params.blogDetailsId}
       />
       {/* End Page Heading Section */}
@@ -114,8 +114,8 @@ export default function BlogDetailsPage() {
       {/* Start CTA Section */}
       <Div className="container">
         <Cta 
-          title='Let’s disscuse make <br />something <i>cool</i> together' 
-          btnText='Apply For Meeting' 
+         title="Let's discuss and take the journey <br/>to  <i>growth</i> together"
+          btnText='Setup Free Meeting' 
           btnLink='/contact' 
           bgSrc='/images/cta_bg.jpeg'
         />

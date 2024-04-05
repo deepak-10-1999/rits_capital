@@ -48,7 +48,7 @@ export default function BlogPage() {
     <>
       <PageHeading 
         title='Our Blog'
-        bgSrc='/images/blog_hero_bg.jpeg'
+        bgSrc='/images/team_hero_bg.png'
         pageLinkText='Blog'
       />
       <Spacing lg='150' md='80'/>
@@ -81,8 +81,8 @@ export default function BlogPage() {
       <Spacing lg='150' md='80'/>
       <Div className="container">
         <Cta 
-          title='Let’s disscuse make <br />something <i>cool</i> together' 
-          btnText='Apply For Meeting' 
+          title="Let's discuss and take the journey <br/>to  <i>growth</i> together"
+          btnText='Setup Free Meeting' 
           btnLink='/contact' 
           bgSrc='/images/cta_bg.jpeg'
         />

@@ -17,30 +17,27 @@ export default function Hero({
 }) {
   return (
     <Div
-      className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1"
-      style={{ backgroundImage: `url(${bgImageUrl})` }}
-    >
-      <Div className="cs-shape_1" />
-      <Div className="cs-shape_1" />
-      <Div className="cs-shape_1" />
-      <Div className="container">
-        <Div className="cs-hero_text">
-          <h1 className="cs-hero_title">{parse(title)}</h1>
-          <Div className="cs-hero_info">
-            <Div>
-              <Button btnLink={btnLink} btnText={btnText} />
-            </Div>
-            <Div>
-              <Div className="cs-hero_subtitle">{subtitle}</Div>
-            </Div>
-          </Div>
-        </Div>
+    className="cs-hero cs-style3 cs-bg cs-fixed_bg cs-shape_wrap_1"
+    id="home"
+  >
+    <Div className="cs-shape_1" />
+    <Div className="cs-shape_1" />
+    <Div className="cs-shape_1" />
+    <Div className="cs-circle_1" />
+    <Div className="cs-circle_2" />
+    <Div className="container">
+      <Div className="cs-hero_text">
+        <h1 className="cs-hero_title text-start">{parse(title)}</h1>
+        <Div className="cs-hero_subtitle text-start">{subtitle}</Div>
+        <Button btnLink={btnLink} btnText={btnText} />
       </Div>
-      <VerticalLinks data={heroSocialLinks} title={socialLinksHeading} />
-      
-      <a href={scrollDownId} className="cs-down_btn">
-        .
-      </a>
+    
     </Div>
+    <VerticalLinks
+      data={heroSocialLinks}
+      title={socialLinksHeading}
+      variant="cs-left_side"
+    />
+  </Div>
   );
 }

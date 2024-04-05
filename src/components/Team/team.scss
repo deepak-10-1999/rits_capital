@@ -2,18 +2,31 @@
 .cs-team.cs-style1 {
   overflow: hidden;
   position: relative;
+
+  // border: 1px solid rgb(200, 197, 197);
+  box-shadow: 2px 2px 10px rgba(111, 111, 111, 0.508);
+  margin: 10px 0;
+  // box-shadow: inset 5px 5px 10px rgba(105, 104, 104, 0.147) ,inset  -10px -10px 10px rgba(240, 239, 239, 0.299);
+
   .cs-member_thumb {
     border-radius: 15px;
     position: relative;
-    overflow: inherit;
+    width: 100%;
+    height: 550px;
+    // overflow: inherit;
     overflow: hidden;
-    img {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      border-radius: inherit;
-      transition: all 0.8s ease;
-    }
+    // background-color: rgb(198, 196, 196);
+    filter: blur(1px);
+    // img {
+    //   width: 100%;
+    //   position: relative;
+    //   z-index: 1;
+    //   border-radius: inherit;
+    //   transition: all 0.8s ease;
+    // }
+  }
+  .cs-member_designation{
+    text-align: center;
   }
   .cs-member_overlay {
     position: absolute;
@@ -22,7 +35,7 @@
     left: 0;
     top: 0;
     border-radius: inherit;
-    background: linear-gradient(360deg, #000000 0%, rgba(77, 77, 77, 0) 100%);
+    // background: linear-gradient(360deg, #2db460 0%, #fff 100%);
   }
   .cs-member_social {
     svg {
@@ -33,14 +46,17 @@
   .cs-member_name {
     font-size: 22px;
     margin-bottom: 6px;
+    text-align: center;
   }
   .cs-member_info {
     position: absolute;
     left: 0;
-    bottom: 0;
+    // bottom: 0;
+    top: 0;
     width: 100%;
     z-index: 3;
-    padding: 30px 25px;
+    padding: 30px 0px;
+    
   }
   .cs-member_social {
     position: absolute;
@@ -75,4 +91,10 @@
 .cs-team.cs-style1 .cs-member_name {
   font-size: 20px;
 }
+}
+.points{
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px;
+  line-height: 150%;
 }
